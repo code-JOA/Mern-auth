@@ -1,4 +1,5 @@
 import express from 'express';
+imprt dotev
 const port = 5000; 
 
 const app = express();

@@ -1,12 +1,12 @@
 {
   "name": "mern-auth",
   "version": "1.0.0",
-  "description": "This is a starter app for a MERN stack application with authentication. This is for a SPA (Single Page Application) workflow that uses the [Vite](https://vite.dev) Build tool. This authentication workf$",
   "type": "module",
-  "main": "index.js",
+  "description": "MERN Authorization System made using Mongodb,Js,React and Node",
+  "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
-    "server": "backend nodemon server.js"
+    "server": "nodemon backend/server.js"
   },
   "keywords": [],
   "author": "",

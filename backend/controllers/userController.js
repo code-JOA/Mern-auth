@@ -17,10 +17,7 @@ const authUser = asyncHandler(async (req, res) => {
 // access Public
 
 const regUser = asyncHandler(async (req, res) => {
-  // res.status(401);
-  // throw new Error('Some went wrong from the client side');
-
-  res.status(200).json({ message: "User Authenticated" });
+    res.status(200).json({ message: "User Authenticated" });
 });
 
 export { authUser };

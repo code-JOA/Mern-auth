@@ -16,8 +16,13 @@ const authUser = asyncHandler(async (req, res) => {
 // route POST /api/users/
 // access Public
 
-const regUser = asyncHandler(async (req, res) => {
-    res.status(200).json({ message: "User Authenticated" });
+const registerUser = asyncHandler(async (req, res) => {
+    res.status(200).json({ message: "User Registered" });
+});
+
+
+const registerUser = asyncHandler(async (req, res) => {
+  res.status(200).json({ message: "User Registered" });
 });
 
 export { authUser };

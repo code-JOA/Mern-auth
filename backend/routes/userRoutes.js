@@ -8,9 +8,9 @@ import {
     updateUserProfile
 } from '../controllers/userController.js';
 
-router.post('/auth', authUser)
+router.post('/', authUser)
 router.post("/auth", authUser);
-router.post("/logout", User);
+router.post("/logout", authUser);
 
 
 export default router;

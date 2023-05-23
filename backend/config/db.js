@@ -1,8 +1,11 @@
 import mongoose from 'mongoose';
 
 
-const connectDB = async () {
+const connectDB = async () => {
+    try {
 
-    
-
+        catch{
+            
+        }
+    }
 }

@@ -36,8 +36,8 @@ const getUserProfile = asyncHandler(async (req, res) => {
 });
 
 // @desc upadate User profile
-// route POST /api/users/update
-// access Public
+// route PUT /api/users/update
+// access Private
 const updateUserProfile = asyncHandler(async (req, res) => {
   res.status(200).json({ message: "User Profile Updated" });
 });

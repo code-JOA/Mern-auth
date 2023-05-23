@@ -9,4 +9,4 @@ const authUser = asyncHandler(async (req, res) => {
     res.status(200).json({ message : 'User Authenticated'});
 });
 
-export { authUser } ;
+export { authUser };

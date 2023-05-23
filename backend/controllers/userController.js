@@ -23,7 +23,15 @@ const registerUser = asyncHandler(async (req, res) => {
 // @desc logout User
 // route POST /api/users/logout
 // access Public
-const logOutUser = asyncHandler(async (req, res) => {
+const logoutUser = asyncHandler(async (req, res) => {
+  res.status(200).json({ message: "User Logged Out" });
+});
+
+
+// @desc Get User profile
+// route POST /api/users/logout
+// access Public
+const getUser = asyncHandler(async (req, res) => {
   res.status(200).json({ message: "User Logged Out" });
 });
 

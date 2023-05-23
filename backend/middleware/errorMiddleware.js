@@ -16,6 +16,7 @@ const errorHandler = (req, res, next) => {
     }
 
     res.statusCode.json({
-        message
+        message,
+        stack : process.env.NODE_ENV
     });
 }

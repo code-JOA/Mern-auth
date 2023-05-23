@@ -5,5 +5,5 @@ const notFound = ( req, res, Next ) => {
 }
 
 const errorHandler = (req, res, next) => {
-    const 
+    letStatusCode = res.statusCode
 }

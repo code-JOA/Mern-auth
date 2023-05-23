@@ -12,7 +12,11 @@ const authUser = asyncHandler(async (req, res) => {
     res.status(200).json({ message : 'User Authenticated'});
 });
 
-const authUser = asyncHandler(async (req, res) => {
+// @desc Auth user/ register users
+// route POST /api/users/
+// access Public
+
+const regUser = asyncHandler(async (req, res) => {
   // res.status(401);
   // throw new Error('Some went wrong from the client side');
 

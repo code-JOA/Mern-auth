@@ -1,7 +1,7 @@
 import express from 'express';
 const router = express.Router();
 import { 
-    authUser
+    authUser,
     registerUser ,
     logoutUser ,
     getUserProfile,
@@ -9,5 +9,8 @@ import {
 } from '../controllers/userController.js';
 
 router.post('/auth', authUser)
+router.post("/auth", authUser);
+router.post("/logout", User);
+
 
 export default router;

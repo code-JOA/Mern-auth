@@ -9,7 +9,8 @@ const errorHandler = (req, res, next) => {
     let message = err.message;
 
 // Mongodb errors since it shows a weird error CastError
-    if (err.name === 'CastError'  && err.kind === 'objectID') {
+    if (err.name === 'CastError'  && err.kind === 'ObjectID') {
+        
 
     }
 }

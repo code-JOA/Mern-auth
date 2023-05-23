@@ -3,3 +3,7 @@ const notFound = ( req, res, Next ) => {
     res.status(404);
     Next(error);
 }
+
+const errorHandler = (req, res, next) => {
+    const 
+}

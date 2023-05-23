@@ -7,4 +7,9 @@ const notFound = ( req, res, Next ) => {
 const errorHandler = (req, res, next) => {
     letStatusCode = res.statusCode === 200 ? 500 : res.statusCode;
     let message = err.message;
+
+// Mongodb error
+    if (error.name(casterror)) {
+
+    }
 }

@@ -6,7 +6,7 @@ import userRoutes from './routes/UserRoutes.js';
 
 const app = express();
 
-app.use(./api/users)
+app.use('./api/users' , userRoutes);
 
 app.get('/', (req, res) => res.send('Server is ready'));
 

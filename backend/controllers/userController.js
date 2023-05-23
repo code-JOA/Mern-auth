@@ -42,4 +42,6 @@ const updateUserProfile = asyncHandler(async (req, res) => {
   res.status(200).json({ message: "User Profile Updated" });
 });
 
-export { authUser };
+export { authUser , registerUser , logo
+
+};

@@ -1,4 +1,6 @@
 import mongoose from 'mongoose';
 
 
-const connectdb = async 
+const connectDB = async () {
+
+}

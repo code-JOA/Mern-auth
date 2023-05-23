@@ -10,7 +10,8 @@ const errorHandler = (req, res, next) => {
 
 // Mongodb errors since it shows a weird error CastError
     if (err.name === 'CastError'  && err.kind === 'ObjectID') {
-        
+        statusCode = 404
+        message = 'Not found'
 
     }
 }

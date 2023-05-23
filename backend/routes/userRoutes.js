@@ -9,7 +9,7 @@ import {
 } from '../controllers/userController.js';
 
 //  register users
-router.post('/', authUser)
+router.post('/', registerUser)
 //  authorise users
 router.post("/auth", authUser);
 //  logOut users

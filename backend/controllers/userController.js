@@ -35,4 +35,11 @@ const getUserProfile = asyncHandler(async (req, res) => {
   res.status(200).json({ message: "Get User Profile" });
 });
 
+// @desc upadate User profile
+// route POST /api/users/update
+// access Public
+const updateUserProfile = asyncHandler(async (req, res) => {
+  res.status(200).json({ message: "User Profile Updated" });
+});
+
 export { authUser };

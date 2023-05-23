@@ -15,7 +15,7 @@ router.post("/auth", authUser);
 //  logOut users
 router.post("/logout", logoutUser);
 
-router.route("/profile").get()
+router.route("/profile").get(getUserProfile).put(updateUserProfile);
 
 
 export default router;

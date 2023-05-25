@@ -107,9 +107,10 @@ const updateUserProfile = asyncHandler(async (req, res) => {
     user.email = req.body.email || user.email;
 
     if (req.body.password) {
-      user.password = req
+      user.password = req.body.password;
 
     }
+    await user.save();
 
   }else{
     res.status(404);

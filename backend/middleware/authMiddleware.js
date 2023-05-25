@@ -13,8 +13,7 @@ const protect = asyncHandler(async (req, res, next) => {
             
         } catch (error) {
             res.status(401);
-        throw new Error('Not authourized, Invalid error')    
-            
+            throw new Error('Not authourized, Invalid error')    
         }
 
 

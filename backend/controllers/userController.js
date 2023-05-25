@@ -92,7 +92,7 @@ const getUserProfile = asyncHandler(async (req, res) => {
     email: req.user.email
   } 
 
-  res.status(200).json({ message: "Get User Profile" });
+  res.status(200).json(user);
 });
 
 // @desc upadate User profile

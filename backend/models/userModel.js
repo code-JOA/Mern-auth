@@ -30,7 +30,7 @@ userSchema.pre('save', async function ( next ) {
 });
 
 userSchema.methods.matchPasswords = async function(enteredPassword) {
-    
+    return await bycrypt.compare(enteredPassword, this.password);
 
 }
 

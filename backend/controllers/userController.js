@@ -33,7 +33,11 @@ const registerUser = asyncHandler(async (req, res) => {
       password
     });
 
-    if 
+    if (user) {
+      res.status(201).json({
+        _id: user._id,
+      });
+    }
 
     res.status(200).json({ message: "User Registered" });
 });

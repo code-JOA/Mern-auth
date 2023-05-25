@@ -7,4 +7,11 @@ const protect = asyncHandler(async (req, res, next) => {
     let token;
 
     token = req.cookies.jwt;
+
+    if (token) {
+
+
+    } else{
+        
+    }
 } );

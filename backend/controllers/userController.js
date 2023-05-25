@@ -12,6 +12,8 @@ const authUser = asyncHandler(async (req, res) => {
     // throw new Error('Some went wrong from the client side');
 
     // res.status(200).json({ message : 'User Authenticated'});
+
+    const { email, password}
 });
 
 // @desc Auth user/ register users

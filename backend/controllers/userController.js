@@ -106,6 +106,11 @@ const updateUserProfile = asyncHandler(async (req, res) => {
     user.name = req.body.name || user.name;
     user.email = req.body.email || user.email;
 
+    if (req.body.password) {
+      user.password = req
+
+    }
+
   }else{
     res.status(404);
     throw new Error('User Not Found')

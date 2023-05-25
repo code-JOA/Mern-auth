@@ -9,7 +9,9 @@ import User from '../models/userModel.js'
 const authUser = asyncHandler(async (req, res) => {
       const { email, password } = req.body;
 
-      const
+      const user = await User.findOne({ email });
+
+      
 
     // res.status(401);
     // throw new Error('Some went wrong from the client side');

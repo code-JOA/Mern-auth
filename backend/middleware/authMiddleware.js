@@ -10,7 +10,7 @@ const protect = asyncHandler(async (req, res, next) => {
 
     if (token) {
         try {
-            const decoded = jwt.verify()
+            const decoded = jwt.verify(token, process.env.JWT_SECRET);
             
         } catch (error) {
             res.status(401);

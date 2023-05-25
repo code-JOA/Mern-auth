@@ -36,7 +36,12 @@ const registerUser = asyncHandler(async (req, res) => {
     if (user) {
       res.status(201).json({
         _id: user._id,
+        user: user.name,
+        email: user.email
       });
+    } else{
+      res.status(400);
+      throw newError()
     }
 
     res.status(200).json({ message: "User Registered" });

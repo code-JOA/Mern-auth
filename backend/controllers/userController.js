@@ -102,7 +102,11 @@ const updateUserProfile = asyncHandler(async (req, res) => {
 
   const User = await User.findById(req.user._id);
 
-  if user
+  if (user) {
+
+  }else{
+
+  }
 
 
   // res.status(200).json({ message: "User Profile Updated" });

@@ -13,5 +13,6 @@ const generateToken = (res, userId) => {
         //  expires in 30days, 24 hours, 60 min , 60 seconds , 1000 ms
         maxAge: 30 * 24 * 60 * 60 * 1000
     }) 
-
 }
+
+export default generateToken;

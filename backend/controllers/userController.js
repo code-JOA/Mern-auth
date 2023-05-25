@@ -87,7 +87,9 @@ const logoutUser = asyncHandler(async (req, res) => {
 const getUserProfile = asyncHandler(async (req, res) => {
 
   const user = {
-    id: 
+    id: req.user._id,
+    name: req.user.name,
+    email: req.user.email
   } 
 
   res.status(200).json({ message: "Get User Profile" });

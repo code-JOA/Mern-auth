@@ -100,6 +100,10 @@ const getUserProfile = asyncHandler(async (req, res) => {
 // access Private
 const updateUserProfile = asyncHandler(async (req, res) => {
 
+  const User = await User.findById{
+    
+  }
+
 
   // res.status(200).json({ message: "User Profile Updated" });
 });

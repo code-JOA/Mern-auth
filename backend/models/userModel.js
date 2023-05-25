@@ -29,7 +29,10 @@ userSchema.pre('save', async function ( next ) {
     this.password = await bycrypt.hash(this.password, salt);
 });
 
-userSchema.methods.matchPassword
+userSchema.methods.matchPasswords = async function(enteredPassword) {
+    
+
+}
 
 
 const User = mongoose.model("User", userSchema);

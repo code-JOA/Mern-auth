@@ -7,13 +7,15 @@ import User from '../models/userModel.js'
 
 
 const authUser = asyncHandler(async (req, res) => {
+      const { email, password } = req.body;
+
+      const
 
     // res.status(401);
     // throw new Error('Some went wrong from the client side');
 
     // res.status(200).json({ message : 'User Authenticated'});
 
-    const { email, password}
 });
 
 // @desc Auth user/ register users

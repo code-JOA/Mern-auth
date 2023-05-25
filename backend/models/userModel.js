@@ -20,7 +20,9 @@ const userSchema = mongoose.Schema({
     timestamps: true,
 });
 
-userSchema.pre('save', async function({}))
+userSchema.pre('save', async function ( next ,{
+
+}));
 
 
 const User = mongoose.model("User", userSchema);

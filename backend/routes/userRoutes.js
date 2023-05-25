@@ -7,6 +7,7 @@ import {
     getUserProfile,
     updateUserProfile
 } from '../controllers/userController.js';
+import { protect } from './middleware/'
 
 //  register users
 router.post('/', registerUser)

@@ -25,7 +25,8 @@ userSchema.pre('save', async function ( next ) {
         next();
     }
 
-    const salt = await bycrypt.genSalt()
+    const salt = await bycrypt.genSalt(10);
+    this.password
 
 });
 

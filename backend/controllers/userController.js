@@ -41,10 +41,10 @@ const registerUser = asyncHandler(async (req, res) => {
       });
     } else{
       res.status(400);
-      throw newError()
+      throw newError('Invalid user data');
     }
 
-    res.status(200).json({ message: "User Registered" });
+    // res.status(200).json({ message: "User Registered" });
 });
 
 // @desc logout User

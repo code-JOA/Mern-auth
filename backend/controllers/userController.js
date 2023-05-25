@@ -103,6 +103,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
   const User = await User.findById(req.user._id);
 
   if (user) {
+    user.name = req.body.name 
 
   }else{
     res.status(404);

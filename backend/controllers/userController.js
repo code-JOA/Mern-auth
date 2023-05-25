@@ -18,7 +18,8 @@ const authUser = asyncHandler(async (req, res) => {
 // access Public
 
 const registerUser = asyncHandler(async (req, res) => {
-    const { name } = req.body;
+    const { name, email, password } = req.body;
+    console.log(name, email, password);
     res.status(200).json({ message: "User Registered" });
 });
 

@@ -26,9 +26,10 @@ userSchema.pre('save', async function ( next ) {
     }
 
     const salt = await bycrypt.genSalt(10);
-    this.password = await bycrypt.hash(this.password, )
-
+    this.password = await bycrypt.hash(this.password, salt);
 });
+
+
 
 
 const User = mongoose.model("User", userSchema);

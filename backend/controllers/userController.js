@@ -2,7 +2,7 @@
 // route POST /api/users/auth
 // access Public
 import asyncHandler from 'express-async-handler';
-import genera
+import generateToken from '../utils/generateToken.js';
 import User from '../models/userModel.js'
 
 

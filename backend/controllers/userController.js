@@ -24,7 +24,7 @@ const registerUser = asyncHandler(async (req, res) => {
 
     if (userExists) {
       res.status(400);
-      throw new Error
+      throw new Error('user already exists');
     }
 
     res.status(200).json({ message: "User Registered" });

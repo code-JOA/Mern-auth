@@ -20,7 +20,11 @@ const authUser = asyncHandler(async (req, res) => {
 const registerUser = asyncHandler(async (req, res) => {
     const { name, email, password } = req.body;
     // console.log(name, email, password);
-    const userExists = await User.findOne({email} email);
+    const userExists = await User.findOne({email});
+
+    if (userExists) {
+
+    }
 
     res.status(200).json({ message: "User Registered" });
 });

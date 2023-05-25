@@ -76,7 +76,7 @@ const logoutUser = asyncHandler(async (req, res) => {
     httpOnly: true,
     expires: newDate(0),
   })
-  
+
   res.status(200).json({ message: "User Logged Out" });
 });
 
@@ -85,6 +85,11 @@ const logoutUser = asyncHandler(async (req, res) => {
 // route Get /api/users/profile
 // access Private
 const getUserProfile = asyncHandler(async (req, res) => {
+
+  const user = {
+    id: 
+  } 
+
   res.status(200).json({ message: "Get User Profile" });
 });
 

@@ -11,7 +11,19 @@ const authUser = asyncHandler(async (req, res) => {
 
       const user = await User.findOne({ email });
 
-      
+      if (user) {
+        generateToken(res, user._id);
+        res.status(201).json({
+        _id: user._id,
+        user: user.name,
+        email: user.email,
+      });
+          } else {
+            res.status(400);
+            throw newError("Invalid user data");
+          }
+
+
 
     // res.status(401);
     // throw new Error('Some went wrong from the client side');

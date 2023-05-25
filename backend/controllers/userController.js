@@ -20,7 +20,7 @@ const authUser = asyncHandler(async (req, res) => {
       });
       } else {
         res.status(400);
-        throw newError("Invalid user data");
+        throw newError("Invalid email or password");
         }
 
 

@@ -20,9 +20,12 @@ const userSchema = mongoose.Schema({
     timestamps: true,
 });
 
-userSchema.pre('save', async function ( next ,{
+userSchema.pre('save', async function ( next ) {
+    if () {
+        
+    }
 
-}));
+});
 
 
 const User = mongoose.model("User", userSchema);

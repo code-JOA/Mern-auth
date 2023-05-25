@@ -105,6 +105,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
   if (user) {
 
   }else{
+    res.status(404)
 
   }
 

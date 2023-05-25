@@ -20,7 +20,7 @@ const userSchema = mongoose.Schema({
     timestamps: true,
 });
 
-userSchema.pre({})
+userSchema.pre('save', async function({}))
 
 
 const User = mongoose.model("User", userSchema);

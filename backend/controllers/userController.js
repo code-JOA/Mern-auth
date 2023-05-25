@@ -76,6 +76,7 @@ const logoutUser = asyncHandler(async (req, res) => {
     httpOnly: true,
     expires: newDate(0),
   })
+  
   res.status(200).json({ message: "User Logged Out" });
 });
 

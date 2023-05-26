@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from './components/Header';
+import Homescreen from './screens/Homescreen';
+
 
 const App = () => {
   return (
     <>
     < Header />
-      <h1>Mern-Auth</h1>
+    < Homescreen />
     </>
   );
 }

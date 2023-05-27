@@ -43,8 +43,7 @@ function Login() {
     const onLoginFailure = (res) => {
         console.log("Login Failed:", res);
   };
-
-  const onSignoutSuccess = () => {
+    const onSignoutSuccess = () => {
     alert("You have been logged out successfully");
     console.clear();
     setShowloginButton(true);

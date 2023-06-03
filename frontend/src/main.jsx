@@ -11,9 +11,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 const router = createBrowserRouter(
-  createRoutesFromElements(),
-  
-
+  createRoutesFromElements(
+    <Route path='/' 
+  )
 )
 
 

@@ -12,7 +12,7 @@ import './index.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' 
+    <Route path='/' element={ < App/> } </>
   )
 )
 

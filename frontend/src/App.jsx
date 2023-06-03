@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-import Homescreen from './screens/Homescreen';
+// import Homescreen from './screens/Homescreen';
 
 
 const App = () => {

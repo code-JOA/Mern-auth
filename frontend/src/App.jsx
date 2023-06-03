@@ -9,6 +9,7 @@ const App = () => {
   return (
     <>
     < Header />
+    < Container className='my-2'></Container>
     < Outlet />
     </>
   );

@@ -16,24 +16,27 @@ const LoginScreen = () => {
 
   return (
     <FormContainer>
-        <h1>Sign In</h1>
+      <h1>Sign In</h1>
 
-        <Form onSubmit={ submitHandler }>
+      <Form onSubmit={submitHandler}>
+        <Form.Group className="my-2" controlId="email">
+          <Form.Label>Email Address</Form.Label>
+          <Form.Control>
+            type="email" placeholder="Enter Email" value= {email}
+            onChange={(e) => setEmail(e.target.value)}
+          </Form.Control>
+        </Form.Group>
 
-            <Form.Group className='my-2' controlId='email'>
-                <Form.Label>Email Address</Form.Label>
-                <Form.Control> 
-                    type="email"
-                    placeholder="Enter Email"
-                    value= {email}
-                    onChange={ (e) => setEmail(e.target.value) }
-                </Form.Control>
-            </Form.Group>
-
-            </Form>
-
+        <Form.Group className="my-2" controlId="password">
+          <Form.Label>Password</Form.Label>
+          <Form.Control>
+            type="password" placeholder="Enter Password" value= {email}
+            onChange={(e) => setEmail(e.target.value)}
+          </Form.Control>
+        </Form.Group>
+      </Form>
     </FormContainer>
-  )
+  );
 }
 
 export default LoginScreen

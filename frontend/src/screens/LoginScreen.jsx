@@ -10,11 +10,12 @@ const LoginScreen = () => {
 
     const submitHandler =async (e) => {
         e.preventDefault() ;
+        console.log('submit');
     }
 
 
   return (
-    <div>LoginScreen</div>
+    <FormContainer>LoginScreen</Form>
   )
 }
 

@@ -25,7 +25,9 @@ const LoginScreen = () => {
                 <Form.Label>Email Address</Form.Label>
                 <Form.Control> 
                     type="email"
-                    placeholder
+                    placeholder="Enter Email"
+                    value= {email}
+                    onChange={ }
                 </Form.Control>
             </Form.Group>
 

@@ -9,16 +9,17 @@ import App from './App.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import bootstrap from 'bootstrap';
 import Homescreen from './screens/Homescreen.jsx';
+import LoginScreen from './screens/LoginScreen.jsx';
 import './index.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route
-      path= '/' element={ <App /> } >
-      <Route index={true} path='/' element={ <Homescreen /> } />
+    <Route path="/" element={<App />}>
+      <Route index={true} path="/" element={<Homescreen />} />
+      <Route index={true} path="/" element={<Homescreen />} />
     </Route>
   )
-)
+);
 
 
 

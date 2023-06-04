@@ -27,7 +27,7 @@ const LoginScreen = () => {
                     type="email"
                     placeholder="Enter Email"
                     value= {email}
-                    onChange={ (e) =>  }
+                    onChange={ (e) => setEmail() }
                 </Form.Control>
             </Form.Group>
 

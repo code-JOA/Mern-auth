@@ -37,8 +37,8 @@ const LoginScreen = () => {
           </Form.Control>
         </Form.Group>
 
-        <Button>
-            
+        <Button type=''>
+            Sign In
         </Button>
       </Form>
     </FormContainer>

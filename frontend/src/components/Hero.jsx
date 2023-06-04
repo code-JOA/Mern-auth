@@ -1,5 +1,5 @@
 import { Container, Card, Button } from "react-bootstrap";
-import 
+import { LinkContainer } from 'react-router-boo'
 
 const Hero = () => {
   return (

@@ -43,6 +43,10 @@ const LoginScreen = () => {
 
         <Row className='py-3'>
 
+            <Col >
+            New Customer ? <Link></Link>
+            </Col>
+
         </Row>
       </Form>
     </FormContainer>

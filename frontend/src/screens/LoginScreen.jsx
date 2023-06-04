@@ -44,7 +44,7 @@ const LoginScreen = () => {
         <Row className='py-3'>
 
             <Col >
-            New Customer ? <Link></Link>
+                New Customer ? <Link to='/register'>Register</Link>
             </Col>
 
         </Row>

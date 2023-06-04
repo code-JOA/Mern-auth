@@ -22,7 +22,11 @@ const LoginScreen = () => {
 
             <Form.Group className='my-2' controlId='email'>
 
-                <Form.Label ></Form.Label>
+                <Form.Label>Email Address</Form.Label>
+                <Form.Control> 
+                    type="email"
+                    placeholder
+                </Form.Control>
             </Form.Group>
 
             </Form>

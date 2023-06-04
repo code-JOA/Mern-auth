@@ -18,9 +18,9 @@ const Hero = () => {
                 Sign In
               </Button>
             </LinkContainer>
-            L
-
-            <Button variant="secondary">Sign Up</Button>
+            <LinkContainer to="/register">
+              <Button variant="secondary">Sign Up</Button>
+            </LinkContainer>
           </div>
         </Card>
       </Container>

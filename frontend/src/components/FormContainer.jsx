@@ -1,9 +1,13 @@
 // import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-const FormContainer = () => {
+const FormContainer = ({ children }) => {
   return (
-    <div>FormContainer</div>
+    <Container>
+        <Row>
+            
+        </Row>
+    </Container>
   )
 }
 

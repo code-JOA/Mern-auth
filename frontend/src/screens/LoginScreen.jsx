@@ -9,7 +9,7 @@ const LoginScreen = () => {
     const [password, setPassword] = useState('') ;
 
     const submitHandler =async (e) => {
-        e.preventDefault() ;
+        e.preventDefault();
         console.log('submit');
     }
 

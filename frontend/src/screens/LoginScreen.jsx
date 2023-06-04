@@ -18,7 +18,11 @@ const LoginScreen = () => {
     <FormContainer>
         <h1>Sign In</h1>
 
-        <Form></Form>
+        <Form onSubmit= { submitHandler }>
+
+            Form.Group className=''
+
+        </Form>
     </FormContainer>
   )
 }

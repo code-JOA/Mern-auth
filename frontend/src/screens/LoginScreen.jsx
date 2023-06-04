@@ -5,7 +5,8 @@ import FormContainer from '../components/FormContainer;'
 
 
 const LoginScreen = () => {
-    const [email, ]
+    const [email, setEmail] = useState() ;
+    const [] 
 
 
   return (

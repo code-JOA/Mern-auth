@@ -5,6 +5,9 @@ import FormContainer from '../components/FormContainer;'
 
 
 const LoginScreen = () => {
+    const [email, ]
+
+
   return (
     <div>LoginScreen</div>
   )

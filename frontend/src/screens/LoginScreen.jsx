@@ -5,8 +5,8 @@ import FormContainer from '../components/FormContainer';
 
 
 const LoginScreen = () => {
-    const [email, setEmail] = useState('') ;
-    const [password, setPassword] = useState('') ;
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
     const submitHandler =async (e) => {
         e.preventDefault();

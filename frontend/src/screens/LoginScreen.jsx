@@ -20,11 +20,11 @@ const LoginScreen = () => {
 
         <Form onSubmit={ submitHandler }>
 
-            <Form>
+            <Form.Group className='my-2' controlId='email'>
 
             {/* </Form> */}
 
-        </Form>
+        </Form.Group>
     </FormContainer>
   )
 }

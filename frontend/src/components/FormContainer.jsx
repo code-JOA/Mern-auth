@@ -6,6 +6,9 @@ const FormContainer = ({ children }) => {
     <Container>
         <Row className='justify-content-md-center mt-5'>
 
+            <col >
+            </col>
+
         </Row>
     </Container>
   )

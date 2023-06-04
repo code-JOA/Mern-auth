@@ -6,7 +6,8 @@ const FormContainer = ({ children }) => {
     <Container>
         <Row className='justify-content-md-center mt-5'>
 
-            <col xs={ 12 }>
+            <col xs={ 12 } md={ 6 } className='card p-5'>
+                { children }
             </col>
 
         </Row>

@@ -59,7 +59,7 @@ const router = createBrowserRouter(
       <Route path="/login" element={<LoginScreen />} />
       <Route path="/register" element={<RegisterScreen />} />
       {/* <Route path="" element={<PrivateRoute />}> */}
-        <Route path="/profile" element={<ProfileScreen />} />
+        {/* <Route path="/profile" element={<ProfileScreen />} /> */}
       </Route>
     </Route>
   )

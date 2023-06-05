@@ -6,5 +6,5 @@ const initialState = {
 }
 
 const authSlice = createSlice({
-    auth
+    name: auth,
 });

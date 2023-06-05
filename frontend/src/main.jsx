@@ -7,10 +7,10 @@ import { createBrowserRouter,
 } from 'react-router-dom';
 import App from './App.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.css";
 // import bootstrap from 'bootstrap';
 import Homescreen from './screens/Homescreen.jsx';
 import LoginScreen from './screens/LoginScreen.jsx';
-import './index.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

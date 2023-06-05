@@ -60,13 +60,13 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Button type="submit" variant="primary" className="mt-3">
-          Sign In
+          Sign Up
         </Button>
       </Form>
 
       <Row className="py-3">
         <Col>
-          New Customer ? <Link to="/register">Register</Link>
+          Already A Customer ? <Link to="/login">Login</Link>
         </Col>
       </Row>
       {/* </Form> */}

@@ -18,8 +18,6 @@ import RegisterScreen from './screens/RegisterScreen.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Provider store={store}>
-
 
       <Route index={true} path="/" element={<Homescreen />} />
       <Route path="/login" element={<LoginScreen />} />
@@ -29,9 +27,10 @@ const router = createBrowserRouter(
 );
 
 
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={ router } />
-  </React.StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <Provider store={store}>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </Provider>
+);

@@ -4,7 +4,9 @@ import authReducer from './slices/authSlice'
 
 
 const Store = configureStore({
-    reducer: {},
+    reducer: {
+        auth: authReducer,
+    },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
     devTools: true
 });

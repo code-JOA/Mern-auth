@@ -22,7 +22,9 @@ const LoginScreen = () => {
         <Form.Group className="my-2" controlId="email">
           <Form.Label>Email Address</Form.Label>
           <Form.Control
-            type="email" placeholder="Enter Email" value= {email}
+            type="email" 
+            placeholder="Enter Email" 
+            value= {email}
             onChange={ (e) => setEmail(e.target.value) }
           ></Form.Control>
         </Form.Group>

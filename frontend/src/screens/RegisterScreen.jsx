@@ -4,6 +4,7 @@ import { Form, Button, Col, Row } from "react-bootstrap";
 import FormContainer from "../components/FormContainer";
 
 const RegisterScreen = () => {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 

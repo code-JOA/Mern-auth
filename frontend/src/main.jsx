@@ -9,6 +9,7 @@ import App from './App.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css";
 // import bootstrap from 'bootstrap';
+import store from './store'
 import Homescreen from './screens/Homescreen.jsx';
 import LoginScreen from './screens/LoginScreen.jsx';
 import RegisterScreen from './screens/RegisterScreen.jsx';

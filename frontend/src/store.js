@@ -5,5 +5,6 @@ const Store = ConfigStore({
     reducer: {},
     middleware: (GetDefaultMiddleware) => GetDefaultMiddleware(),
     devTools: true
-
 });
+
+export default store;

@@ -4,9 +4,7 @@ import { configureStore } from '@reduxjs/toolkit';
 
 
 const Store = configureStore({
-    reducer: {
-        // auth: authReducer,
-    },
+    reducer: {},
     middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
     devTools: true
 });

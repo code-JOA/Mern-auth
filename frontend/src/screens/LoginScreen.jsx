@@ -21,10 +21,10 @@ const LoginScreen = () => {
       <Form onSubmit={submitHandler}>
         <Form.Group className="my-2" controlId="email">
           <Form.Label>Email Address</Form.Label>
-          <Form.Control>
+          <Form.Control
             type="email" placeholder="Enter Email" value= {email}
             onChange={ (e) => setEmail(e.target.value) }
-          </Form.Control>
+          ></Form.Control>
         </Form.Group>
 
         <Form.Group className="my-2" controlId="password">

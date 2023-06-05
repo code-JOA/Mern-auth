@@ -4,7 +4,7 @@ import { configureStore } from "@reduxjs/toolkit";
 
 const Store = configureStore({
     reducer: {},
-    middleware: (GetDefaultMiddleware) => GetDefaultMiddleware(),
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
     devTools: true
 });
 

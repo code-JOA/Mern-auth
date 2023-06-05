@@ -42,15 +42,16 @@ const LoginScreen = () => {
         <Button type="submit" variant="primary" className="mt-3">
           Sign In
         </Button>
-      </Form>
+        {/* </Form> */}
 
-      <Row className="py-3">
-        <Col>
-          New Customer ? <Link to="/register">Register</Link>
-        </Col>
-      </Row>
+        <Row className="py-3">
+          <Col>
+            New Customer ? <Link to="/register">Register</Link>
+          </Col>
+        </Row>
+      </Form>
     </FormContainer>
-  )
+  );
 }
 
 export default LoginScreen;

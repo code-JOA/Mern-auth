@@ -7,12 +7,12 @@ const Header = () => {
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
-          <LinkContainer to="/">
+          <LinkContainer to='11111111111/'>
             <Navbar.Brand>MERN App</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav className='ms-auto'>
               <LinkContainer to='/login'>
                 <Nav.Link>
                   <FaSignInAlt /> Sign In

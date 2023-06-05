@@ -3,5 +3,7 @@ import { curryGetDefaultMiddleware } from '@reduxjs/toolkit/dist/getDefaultMiddl
 
 const Store = ConfigStore({
     reducer: {},
-    middleware: (GetDefaultMiddleware) => 
+    middleware: (GetDefaultMiddleware) => GetDefaultMiddleware(),
+    devTools: true
+
 });

@@ -11,6 +11,7 @@ import "./index.css";
 // import bootstrap from 'bootstrap';
 import Homescreen from './screens/Homescreen.jsx';
 import LoginScreen from './screens/LoginScreen.jsx';
+import RegisterScreen from './screens/RegisterScreen.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

@@ -18,6 +18,7 @@ import RegisterScreen from './screens/RegisterScreen.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
+      <Provider store={store}>
 
 
       <Route index={true} path="/" element={<Homescreen />} />

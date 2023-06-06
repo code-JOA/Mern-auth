@@ -1,3 +1,4 @@
 import { apiSlice } from './apiSlice';
 
-const USER
+const USERS_URL = '/api/users';
+

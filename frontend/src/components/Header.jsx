@@ -17,7 +17,9 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className='ms-auto'>
               {userInfo ? (
-                
+                <>
+                <NavDropdown userInfo}></NavDropdown>
+                </>
               ) : (
 
                 <LinkContainer to='/login'>

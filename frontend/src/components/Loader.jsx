@@ -4,7 +4,8 @@ import React from 'react'
 
 const Loader = () => {
   return (
-    <Spinner>Loader</Spinner>
+    <Spinner
+    ></Spinner>
   )
 }
 

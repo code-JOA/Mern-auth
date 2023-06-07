@@ -33,9 +33,7 @@ const RegisterScreen = () => {
 
 
 [[[
-  \'login
-
-  
+  trr
 ]]]
   const submitHandler = async (e) => {
     e.preventDefault();

@@ -16,13 +16,13 @@ const LoginScreen = () => {
 
     const [login, {isLoading}] = useLoginMutation();
 
-    const { userInfo } = useSelector((state) => useState.auth);
+    const { userInfo } = useSelector((state) => state.auth);
     
     useEffect(() => {
       if (userInfo) {
         navigate('/');
       }
-    } [navigate, userInfo]);
+    }, [navigate, userInfo]);
 
     const submitHandler =async (e) => {
         e.preventDefault();

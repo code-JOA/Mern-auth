@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { Form, Button, Col, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import FormContainer from "../components/FormContainer";
-import 
+import { toast } from 'react-toastify';
+import Loader from '../components/Loader';
 
 const RegisterScreen = () => {
   const [name, setName] = useState("");

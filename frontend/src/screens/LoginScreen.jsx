@@ -11,9 +11,10 @@ const LoginScreen = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const navigate = useNavigate({
-      
-    })
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
+
+    const [] = use
 
     const submitHandler =async (e) => {
         e.preventDefault();

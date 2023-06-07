@@ -34,13 +34,13 @@ const RegisterScreen = () => {
     } else {
       try {
         const res = await login({ email, password}).unwrap();
-        
+        dispatch(setCredentials({ ...res }));
+        navigate("/");     
       } catch (error) {
         
+        
       }
-      const res = await login({ email, password }).unwrap();
-      dispatch(setCredentials({ ...res }));
-      navigate("/");
+      
     }
   };
 

@@ -29,7 +29,9 @@ const RegisterScreen = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (passworword ) {}
+    if (passworword !== confirmPassword) {
+      toast.error(password is wrong)
+    }
   };
 
   return (

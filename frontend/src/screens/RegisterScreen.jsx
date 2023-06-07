@@ -21,6 +21,12 @@ const RegisterScreen = () => {
 
   const [register, { isLoading }] = useRegisterMutation();
 
+  useEffect(() => {
+    if (userInfo) {
+      navigate("/");
+      }
+    }, [navigate, userInfo]);
+
   const submitHandler = async (e) => {
     e.preventDefault();
     console.log("submit");

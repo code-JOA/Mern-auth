@@ -27,8 +27,7 @@ const LoginScreen = () => {
     const submitHandler =async (e) => {
         e.preventDefault();
         try { 
-          
-
+          const res = await login()
         } catch (e) {}
     }
 

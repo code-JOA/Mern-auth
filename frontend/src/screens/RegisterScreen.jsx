@@ -88,7 +88,7 @@ const RegisterScreen = () => {
           ></Form.Control>
         </Form.Group>
 
-        { isLoading && < register />}
+        { isLoading && < Loader />}
 
         <Button type="submit" variant="primary" className="mt-3">
           Sign Up

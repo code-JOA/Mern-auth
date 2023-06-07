@@ -29,7 +29,7 @@ const RegisterScreen = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (passworword !== confirmPassword) {
+    if (password !== confirmPassword) {
       toast.error('password is incorrect');
     } else {
       try {
@@ -37,8 +37,7 @@ const RegisterScreen = () => {
         dispatch(setCredentials({ ...res }));
         navigate("/");     
       } catch (error) {
-        
-        
+        toast.error(err?.data?.message || err.error);        
       }
       
     }

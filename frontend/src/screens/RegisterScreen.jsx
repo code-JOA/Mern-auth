@@ -19,22 +19,8 @@ const RegisterScreen = () => {
 
   const { userInfo } = useSelector((state) => state.auth);
 
-  const [login, { isLoading }] = useRegisterMutation();[[[[[[[[[';q1111111111111111111111111111111111111111111;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;kkkkkkkkkkkkkkkkkkkkkkkkmdDDDDDDD(9999999iiiiiiiiiiiiiiiiiiiiiiiiiiiio-']]]]]]]]]]
+  const [login, { isLoading }] = useRegisterMutation();
 
-
-
-
-
-
-
-]]====/''']==========================;p
-
-
-
-
-[[[
-  trr
-]]]
   const submitHandler = async (e) => {
     e.preventDefault();
     console.log("submit");

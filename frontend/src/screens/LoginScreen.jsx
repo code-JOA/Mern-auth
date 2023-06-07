@@ -4,12 +4,16 @@ import { Form, Button, Col, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import FormContainer from '../components/FormContainer';
 import { useLoginMutation } from '../slices/usersApiSlice';
-import { setCredentials } from 
+import { setCredentials } from '../slices/authSlice';
 
 
 const LoginScreen = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const navigate = useNavigate({
+      
+    })
 
     const submitHandler =async (e) => {
         e.preventDefault();

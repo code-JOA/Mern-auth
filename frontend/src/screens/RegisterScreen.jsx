@@ -33,10 +33,14 @@ const RegisterScreen = () => {
       toast.error('password is incorrect');
     } else {
       try {
+        const res = await login({ email, password}).unwrap();
         
       } catch (error) {
         
       }
+      const res = await login({ email, password }).unwrap();
+      dispatch(setCredentials({ ...res }));
+      navigate("/");
     }
   };
 

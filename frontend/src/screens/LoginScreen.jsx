@@ -16,7 +16,7 @@ const LoginScreen = () => {
 
     const [login, {isLoading}] = useLoginMutation();
 
-    const userInfo = useUserInfo(); 
+    const {userInfo} = useSelector((state, useState)); 
 
     const submitHandler =async (e) => {
         e.preventDefault();

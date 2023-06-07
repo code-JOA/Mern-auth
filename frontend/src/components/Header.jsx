@@ -18,7 +18,7 @@ const Header = () => {
             <Nav className='ms-auto'>
               {userInfo ? (
                 <>
-                <NavDropdown userInfo}></NavDropdown>
+                <NavDropdown title={userInfo}></NavDropdown>
                 </>
               ) : (
 

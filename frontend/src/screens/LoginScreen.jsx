@@ -22,7 +22,7 @@ const LoginScreen = () => {
       if (userInfo) {
         navigate('/');
       }
-    } [navigate, ])
+    } [navigate, userInfo]);
 
     const submitHandler =async (e) => {
         e.preventDefault();

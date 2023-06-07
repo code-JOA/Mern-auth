@@ -31,7 +31,7 @@ const LoginScreen = () => {
           dispatch(setCredentials({...res}))
           navigate('/')
         } catch (err) {
-          consol.log(err.data.message);
+          consol.log(err?.data?.message || err.error);
         }
     }
 

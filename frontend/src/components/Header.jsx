@@ -6,7 +6,6 @@ import { LinkContainer } from 'react-router-bootstrap';
 const Header = () => {
   const {userInfo} = useSelector((state) => state.auth);
 
-
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
@@ -17,7 +16,7 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className='ms-auto'>
-              {}
+              { userInfo ? () : () }
               <LinkContainer to='/login'>
                 <Nav.Link>
                   <FaSignInAlt /> Sign In

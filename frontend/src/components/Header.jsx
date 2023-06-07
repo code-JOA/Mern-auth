@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container, NavDropdown, Badge } from "react-bootstrap";
 import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
+import { useSelector, useBadge } from '';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const Header = () => {

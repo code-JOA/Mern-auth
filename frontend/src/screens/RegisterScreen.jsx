@@ -17,6 +17,11 @@ const RegisterScreen = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
+  const { userInfo } = useSelector((state) => state.auth);
+
+  const [login, { isLoading }] = useLoginMutation();
+
+
   const submitHandler = async (e) => {
     e.preventDefault();
     console.log("submit");

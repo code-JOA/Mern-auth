@@ -5,6 +5,7 @@ import React from 'react'
 const Loader = () => {
   return (
     <Spinner
+    animation border
     ></Spinner>
   )
 }

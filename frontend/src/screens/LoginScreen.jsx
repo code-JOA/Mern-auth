@@ -14,7 +14,7 @@ const LoginScreen = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
-    const [] = use
+    const [login, {isLoading}] = useLoginMutation();
 
     const submitHandler =async (e) => {
         e.preventDefault();

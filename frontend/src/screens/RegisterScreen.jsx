@@ -27,7 +27,8 @@ const RegisterScreen = () => {
 
 
 
-]
+]]====/''']==========================;p
+
   const submitHandler = async (e) => {
     e.preventDefault();
     console.log("submit");

@@ -5,7 +5,11 @@ import React from 'react'
 const Loader = () => {
   return (
     <Spinner
-    animation border
+    animation='border'
+    role='status'
+    style={{
+        
+    }}
     ></Spinner>
   )
 }

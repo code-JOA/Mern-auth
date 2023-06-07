@@ -19,7 +19,7 @@ const RegisterScreen = () => {
 
   const { userInfo } = useSelector((state) => state.auth);
 
-  const [login, { isLoading }] = useLoginMutation();
+  const [login, { isLoading }] = useRegisterMutation();
 
 
   const submitHandler = async (e) => {

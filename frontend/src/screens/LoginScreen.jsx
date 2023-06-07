@@ -29,7 +29,10 @@ const LoginScreen = () => {
         try { 
           const res = await login({ email, password }).unwrap();
           dispatch(setCredentials({...res}))
-        } catch (e) {}
+          navigate('/')
+        } catch (err) {
+          consol.log
+        }
     }
 
 

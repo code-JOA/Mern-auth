@@ -4,7 +4,7 @@ import { useSelector, useBadge } from 'react-redux';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const Header = () => {
-  const userInfo = useSelector()
+  const {userInfo} = useSelector((state) => state.auth);
 
 
   return (

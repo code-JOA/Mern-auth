@@ -9,8 +9,8 @@ export const usersApiSlice = apiSlice.injectEndpoints({
                 url: `${USERS_URL}/auth`,
                 method: 'POST',
                 body: data
-            })
-        })
+            }),
+        }),
         logout: (builder).mutation({
             query: (data) => data ({
                 url: `${USERS_URL}/logout`,

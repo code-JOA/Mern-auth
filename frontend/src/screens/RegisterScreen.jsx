@@ -29,7 +29,7 @@ const RegisterScreen = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    console.log("submit");
+    if () : {}
   };
 
   return (

@@ -14,6 +14,8 @@ const RegisterScreen = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  const navigate = useNavigate()
+
   const submitHandler = async (e) => {
     e.preventDefault();
     console.log("submit");

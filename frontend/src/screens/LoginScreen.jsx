@@ -62,6 +62,8 @@ const LoginScreen = () => {
           ></Form.Control>
         </Form.Group>
 
+        { isLoading && <></>}
+
         <Button type="submit" variant="primary" className="mt-3">
           Sign In
         </Button>

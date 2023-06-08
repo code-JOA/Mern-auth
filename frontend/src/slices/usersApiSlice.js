@@ -28,7 +28,13 @@ export const usersApiSlice = apiSlice.injectEndpoints({
         }),
     }),
 
-    
+    updateUser: builder.mutation({
+      query: (data) => ({
+        url: `${USERS_URL}`,
+        method: "POST",
+        body: data,
+      }),
+    }),
   }),
 });
 

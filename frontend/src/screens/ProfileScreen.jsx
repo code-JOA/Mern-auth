@@ -32,7 +32,6 @@ const ProfileScreen = () => {
     } else {
       console.log('submit')
           }
-    }
   };
 
   return (

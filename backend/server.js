@@ -20,7 +20,7 @@ app.use('./api/users' , userRoutes);
 // since we want to be able to deploy our App on the web
 if (process.env.NODE_ENV === 'production'){
     const  __dirname= path.resolve();
-    app.use(express)
+    app.use(express.static('path'));
 }
 
 app.get('/', (req, res) => res.send('Server is ready'));

@@ -86,11 +86,6 @@ const ProfileScreen = () => {
         </Button>
       </Form>
 
-      <Row className="py-3">
-        <Col>
-          Already Have An Account ? <Link to="/login">Login</Link>
-        </Col>
-      </Row>
       {/* </Form> */}
     </FormContainer>
   );

@@ -38,8 +38,9 @@ const ProfileScreen = () => {
           _id: userInfo._id,
           name,
           email,
-          
-        });
+          password
+        }).unwrap();
+        dispatch(setCredentials({}))
       } catch (error) {
         
       }

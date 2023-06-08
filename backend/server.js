@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended: true}));
 
 app.use('./api/users' , userRoutes);
 
-if (procress.env.NODE_ENV === 'production'){
+if (process.env.NODE_ENV === 'production'){
     const  __dirname= path.resolve();
 }
 

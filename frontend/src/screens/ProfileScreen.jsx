@@ -33,7 +33,11 @@ const ProfileScreen = () => {
     if (password !== confirmPassword) {
       toast.error("password is incorrect");
     } else {
-      console.log('submit')
+      try {
+        const res = await
+      } catch (error) {
+        
+      }
           }
   };
 

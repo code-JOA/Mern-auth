@@ -22,8 +22,9 @@ const router = createBrowserRouter(
       <Route index={true} path="/" element={<Homescreen />} />
       <Route path="/login" element={<LoginScreen />} />
       <Route path="/register" element={<RegisterScreen />} />
+      <
       <Route path="/profile"  eleement={<RegisterScreen />} />
-      
+
     </Route>
   )
 );

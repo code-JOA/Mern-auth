@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 
 const PrivateRoute = () => {
-    const userInfo =
+    const { userInfo } =
   return (
     <div>PrivateRoute</div>
   )

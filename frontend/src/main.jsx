@@ -14,7 +14,7 @@ import Homescreen from './screens/Homescreen.jsx';
 import LoginScreen from './screens/LoginScreen.jsx';
 import RegisterScreen from './screens/RegisterScreen.jsx';
 import ProfileScreen from './screens/ProfileScreen.jsx';
-import PrivateRoute from './screens/PrivateRoute';
+import PrivateRoute from './components/PrivateRoute';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

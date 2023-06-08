@@ -26,7 +26,7 @@ const ProfileScreen = () => {
     setName(userInfo.name);
     setEmail(userEmail.email);    
     
-  }, [userInfo.setName, userinfo.setEmail]);
+  }, [userInfo.setName, userInfo.setEmail]);
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -35,7 +35,10 @@ const ProfileScreen = () => {
     } else {
       try {
         const res = await updateProfile({
-          _id: user
+          _id: userInfo._id,
+          name,
+          email,
+          
         });
       } catch (error) {
         

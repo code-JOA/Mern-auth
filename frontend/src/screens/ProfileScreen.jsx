@@ -19,7 +19,7 @@ const ProfileScreen = () => {
 
   const { userInfo } = useSelector((state) => state.auth);
 
-  const [updateProfile] = useUpdateUserMutation();
+  const [updateProfile , { isLoading }] = useUpdateUserMutation();
 
 
   useEffect(() => {
@@ -82,7 +82,8 @@ const ProfileScreen = () => {
           ></Form.Control>
         </Form.Group>
 
-
+        { isLoading }
+        
         <Button type="submit" variant="primary" className="mt-3">
           Update
         </Button>

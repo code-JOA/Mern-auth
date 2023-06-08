@@ -42,5 +42,5 @@ export const {
     useLoginMutation, 
     useLogoutMutation, 
     useRegisterMutation,
-    useUpdateUserMutation 
+    useUpdateUserMutation, 
 } = usersApiSlice;

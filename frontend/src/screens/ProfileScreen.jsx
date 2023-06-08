@@ -30,12 +30,7 @@ const ProfileScreen = () => {
     if (password !== confirmPassword) {
       toast.error("password is incorrect");
     } else {
-      try {
-        const res = await register({ name, email, password }).unwrap();
-        dispatch(setCredentials({ ...res }));
-        navigate("/");
-      } catch (error) {
-        toast.error(err?.data?.message || err.error);
+      
       }
     }
   };

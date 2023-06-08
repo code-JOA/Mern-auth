@@ -20,10 +20,9 @@ const ProfileScreen = () => {
 
 
   useEffect(() => {
-    
-    navigate("/");
+    setName()    
     }
-  }, [navigate, userInfo]);
+  }, []);
 
   const submitHandler = async (e) => {
     e.preventDefault();

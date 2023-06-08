@@ -40,7 +40,8 @@ const ProfileScreen = () => {
           email,
           password
         }).unwrap();
-        dispatch(setCredentials({}))
+        dispatch(setCredentials({...res}))
+        toast.success()
       } catch (error) {
         
       }

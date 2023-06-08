@@ -19,6 +19,8 @@ const ProfileScreen = () => {
 
   const { userInfo } = useSelector((state) => state.auth);
 
+  const [updateProfile] = useUpdateUserMutation();
+
 
   useEffect(() => {
     setName(userInfo.name);

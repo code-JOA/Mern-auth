@@ -79,10 +79,9 @@ const ProfileScreen = () => {
           ></Form.Control>
         </Form.Group>
 
-        {isLoading && <Loader />}
 
         <Button type="submit" variant="primary" className="mt-3">
-          Sign Up
+          Update
         </Button>
       </Form>
 

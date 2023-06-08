@@ -34,7 +34,9 @@ const ProfileScreen = () => {
       toast.error("password is incorrect");
     } else {
       try {
-        const res = await
+        const res = await updateProfile({
+          _id: user
+        });
       } catch (error) {
         
       }

@@ -15,7 +15,9 @@ app.use(express.urlencoded({extended: true}));
 
 app.use('./api/users' , userRoutes);
 
-if (procress.env.NODE_ENV
+if (procress.env.NODE_ENV === 'production'){
+    __dirname=
+}
 
 app.get('/', (req, res) => res.send('Server is ready'));
 

@@ -13,6 +13,7 @@ import { Provider } from 'react-redux';
 import Homescreen from './screens/Homescreen.jsx';
 import LoginScreen from './screens/LoginScreen.jsx';
 import RegisterScreen from './screens/RegisterScreen.jsx';
+import ProfileScreen from './screens/ProfileScreen.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Form, Button, Col, Row } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import FormContainer from "../components/FormContainer";
 import { toast } from "react-toastify";
@@ -18,11 +18,10 @@ const ProfileScreen = () => {
 
   const { userInfo } = useSelector((state) => state.auth);
 
-  const [register, { isLoading }] = useRegisterMutation();
 
   useEffect(() => {
-    if (userInfo) {
-      navigate("/");
+    
+    navigate("/");
     }
   }, [navigate, userInfo]);
 

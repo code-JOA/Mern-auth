@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended: true}));
 app.use('./api/users' , userRoutes);
 
 // since we want to be able to deploy our App on the web
-
+// we want to join the __dirname to the dist folder in the frontend folder
 if (process.env.NODE_ENV === 'production'){
     const  __dirname= path.resolve();
     app.use(express.static(path.join(__dirname, 'frontend/dist')));

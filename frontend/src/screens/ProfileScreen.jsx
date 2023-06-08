@@ -20,7 +20,8 @@ const ProfileScreen = () => {
 
 
   useEffect(() => {
-    setName()    
+    setName(userInfo.name);
+    setName(userEmail.email);    
     }
   }, []);
 
